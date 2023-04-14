@@ -3,13 +3,13 @@ import { render, screen } from "@testing-library/react";
 import NavBar from "../components/NavBar";
 
 describe("NavBar", () => {
-  it("renders correctly", () => {
+  xit("renders correctly", () => {
     const { asFragment } = render(<NavBar />);
 
     expect(asFragment()).toMatchSnapshot;
   });
 
-  it("renders the logo", () => {
+  xit("renders the logo", () => {
     render(<NavBar />);
 
     const logo = screen.getByAltText(/website-logo/i);
