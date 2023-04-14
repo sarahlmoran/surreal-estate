@@ -1,0 +1,21 @@
+.nav-bar {
+  border-bottom: 4px solid grey;
+  background-color: white;
+}
+
+.nav-logo {
+  width: 200px;
+  height: auto;
+  background-color: white;
+}
+
+.navbar-links {
+  padding: 0;
+  margin: 0;
+}
+
+.navbar-links-item {
+  margin: 0;
+  padding: 16px;
+  display: inline-block;
+}
