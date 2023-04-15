@@ -1,0 +1,33 @@
+.add-property {
+  padding: 10px;
+  color: black;
+}
+
+#add-button {
+  color: white;
+  background-color: grey;
+  border-radius: 20%;
+  font-family: "Roboto Mono", monospace;
+  border: black;
+  margin: 10px;
+  font-size: small;
+}
+
+#add-button:hover {
+  color: black;
+}
+
+input {
+  font-family: "Roboto Mono", monospace;
+  border-radius: 4%;
+  border: solid 1px black;
+}
+
+label {
+  padding: 2px;
+}
+
+select {
+  font-family: "Roboto Mono", monospace;
+  border-radius: 4%;
+}
