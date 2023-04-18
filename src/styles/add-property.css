@@ -1,6 +1,11 @@
 .add-property {
-  padding: 10px;
+  padding: 0px;
   color: black;
+  border: 2px solid black;
+  background-color: white;
+  margin-left: 25%;
+  margin-right: 25%;
+  margin-top: 3%;
 }
 
 #add-button {
@@ -10,7 +15,7 @@
   font-family: "Roboto Mono", monospace;
   border: black;
   margin: 10px;
-  font-size: small;
+  font-size: medium;
 }
 
 #add-button:hover {
@@ -24,7 +29,11 @@ input {
 }
 
 label {
-  padding: 2px;
+  padding: 10px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 7fr;
+  width: 200px;
 }
 
 select {
