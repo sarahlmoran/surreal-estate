@@ -21,23 +21,7 @@ const App = () => {
       <div className="app">
         <NavBar />
         <Routes>
-          <Route
-            path="/"
-            element={
-              <>
-                <Properties />
-                <PropertyCard
-                  title="3 bedroom bungalow"
-                  city="Manchester"
-                  type="bungalow"
-                  bedrooms="3"
-                  bathrooms="1"
-                  price="300,000"
-                  email="seller@gmail.com"
-                />
-              </>
-            }
-          />
+          <Route path="/" element={<Properties />} />
           <Route path="/add-property" element={<AddProperty />} />
         </Routes>
       </div>
