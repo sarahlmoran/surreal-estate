@@ -7,8 +7,8 @@ import MClogo from "../images/MClogo.png";
 const NavBar = () => {
   return (
     <div className="nav-bar">
+      <img className="nav-logo" src={MClogo} alt="website-logo" />
       <ul className="navbar-links">
-        <img className="nav-logo" src={MClogo} alt="website-logo" />
         <li className="navbar-links-item">
           <Link className="navbar-item" to="/">
             View Properties

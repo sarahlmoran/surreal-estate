@@ -1,14 +1,14 @@
 .nav-bar {
   border-bottom: 4px solid grey;
   background-color: white;
-  border: 4px solid orange;
+  display: flex;
+  align-items: center;
 }
 
 .nav-logo {
   width: 200px;
   height: auto;
   background-color: white;
-  border: 4px solid orange;
 }
 
 .navbar-links {
@@ -20,7 +20,6 @@
   margin: 0;
   padding: 16px;
   display: inline-block;
-  border: 4px solid orange;
 }
 
 .navbar-item {
