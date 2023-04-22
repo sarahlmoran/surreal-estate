@@ -1,6 +1,5 @@
-import React from "react";
+import React, { useState } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import ReactDOM from "react-dom";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import {
   faBath,
@@ -14,13 +13,21 @@ import "../styles/app.css";
 import NavBar from "./NavBar";
 import AddProperty from "./AddProperty";
 import Properties from "./Properties";
-import PropertyCard from "./PropertyCard";
 
 const App = () => {
+  const [userID, setUserID] = useState("");
+  const handleLogin = (response) => {
+    setUserID(response.userID);
+  };
+
+  const handleLogout = () => {
+    window.FB.logout(setUserID(""));
+  };
+
   return (
     <Router>
       <div className="app">
-        <NavBar />
+        <NavBar userID={userID} onLogin={handleLogin} onLogout={handleLogout} />
         <Routes>
           <Route path="/" element={<Properties />} />
           <Route path="/add-property" element={<AddProperty />} />

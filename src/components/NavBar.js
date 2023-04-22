@@ -1,10 +1,10 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import FacebookLogin from "react-facebook-login";
 import "../styles/navbar.css";
-import OtherLogo from "../images/OtherLogo.png";
 import MClogo from "../images/MClogo.png";
 
-const NavBar = () => {
+const NavBar = ({ onLogin, onLogout, userID }) => {
   return (
     <div className="nav-bar">
       <img className="nav-logo" src={MClogo} alt="website-logo" />
@@ -20,6 +20,19 @@ const NavBar = () => {
           </Link>
         </li>
       </ul>
+      <div className="facebook-login">
+        {userID ? (
+          <button type="submit" className="facebook-signout" onClick={onLogout}>
+            Sign out
+          </button>
+        ) : (
+          <FacebookLogin
+            appId="756459945966530"
+            callback={onLogin}
+            fields="name,email,picture"
+          />
+        )}
+      </div>
     </div>
   );
 };

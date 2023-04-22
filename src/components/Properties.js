@@ -26,7 +26,9 @@ const Properties = () => {
     axios
       .get(`http://localhost:4000/api/v1/PropertyListing${search}`)
       .then((response) => setProperties(response.data))
-      .catch();
+      .catch(() =>
+        setAlert({ message: "Server error. Please try again later." })
+      );
   }, [search]);
 
   return (
