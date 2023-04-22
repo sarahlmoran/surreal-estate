@@ -8,6 +8,7 @@ import {
   faSterlingSign,
   faHouse,
   faEnvelope,
+  faMagnifyingGlass,
 } from "@fortawesome/free-solid-svg-icons";
 import "../styles/app.css";
 import NavBar from "./NavBar";
@@ -29,5 +30,12 @@ const App = () => {
   );
 };
 
-library.add(faBath, faBed, faSterlingSign, faHouse, faEnvelope);
+library.add(
+  faBath,
+  faBed,
+  faSterlingSign,
+  faHouse,
+  faEnvelope,
+  faMagnifyingGlass
+);
 export default App;

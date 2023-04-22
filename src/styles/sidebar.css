@@ -1,4 +1,12 @@
 .side-bar {
+  background-color: white;
+  height: 100%;
+  width: 160px;
+  position: fixed;
+}
+
+.side-bar-links {
+  text-decoration: none;
 }
 
 .sidebar-links-item {
