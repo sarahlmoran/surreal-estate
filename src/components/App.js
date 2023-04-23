@@ -29,7 +29,7 @@ const App = () => {
       <div className="app">
         <NavBar userID={userID} onLogin={handleLogin} onLogout={handleLogout} />
         <Routes>
-          <Route path="/" element={<Properties />} />
+          <Route path="/" element={<Properties userID={userID} />} />
           <Route path="/add-property" element={<AddProperty />} />
         </Routes>
       </div>

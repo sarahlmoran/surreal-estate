@@ -3,7 +3,18 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import "../styles/property-card.css";
 
 const PropertyCard = (props) => {
-  const { bathrooms, bedrooms, city, email, price, title, type } = props;
+  const {
+    _id,
+    bathrooms,
+    bedrooms,
+    city,
+    email,
+    price,
+    onSaveProperty,
+    title,
+    type,
+    userID,
+  } = props;
   return (
     <div className="add-property">
       <FontAwesomeIcon icon="house" />
@@ -20,6 +31,17 @@ const PropertyCard = (props) => {
         <a href={`mailto:${email}`}>Email</a>
       </div>
       <FontAwesomeIcon icon="envelope" />
+      <div>
+        {userID ? (
+          <button
+            type="submit"
+            id="save-button"
+            onClick={() => onSaveProperty(_id)}
+          >
+            Save
+          </button>
+        ) : null}
+      </div>
     </div>
   );
 };
