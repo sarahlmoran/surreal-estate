@@ -13,6 +13,7 @@ import "../styles/app.css";
 import NavBar from "./NavBar";
 import AddProperty from "./AddProperty";
 import Properties from "./Properties";
+import SavedProperties from "./SavedProperties";
 
 const App = () => {
   const [userID, setUserID] = useState("");
@@ -31,6 +32,7 @@ const App = () => {
         <Routes>
           <Route path="/" element={<Properties userID={userID} />} />
           <Route path="/add-property" element={<AddProperty />} />
+          <Route path="/saved-properties" element={<SavedProperties />} />
         </Routes>
       </div>
     </Router>

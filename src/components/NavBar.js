@@ -19,6 +19,11 @@ const NavBar = ({ onLogin, onLogout, userID }) => {
             Add Properties
           </Link>
         </li>
+        <li className="navbar-links-item">
+          <Link className="navbar-item" to="/saved-properties">
+            Saved Properties
+          </Link>
+        </li>
       </ul>
       <div className="facebook-login">
         {userID ? (
