@@ -1,16 +1,19 @@
-/*.side-bar {
-  background-color: white;
-  height: 100%;
-  width: 160px;
-  position: fixed;
-}*/
+.side-bar {
+  display: flex;
+  align-items: center;
+  border-bottom: 4px solid grey;
+}
 
-.side-bar-links {
+.sidebar-links {
   text-decoration: none;
 }
 
-.sidebar-links-item {
-  margin: 0;
-  padding: 16px;
-  display: inline-block;
+.sidebar-item {
+  text-decoration: none;
+  color: black;
+  padding: 15px;
+}
+
+.search {
+  margin-left: 28%;
 }

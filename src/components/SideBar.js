@@ -36,6 +36,49 @@ const SideBar = () => {
 
   return (
     <div className="side-bar">
+      <ul className="sidebar-links">
+        <Link
+          className="sidebar-item"
+          to={buildQueryString("query", { city: "Manchester" })}
+        >
+          Manchester
+        </Link>
+
+        <Link
+          className="sidebar-item"
+          to={buildQueryString("query", { city: "Leeds" })}
+        >
+          Leeds
+        </Link>
+
+        <Link
+          className="sidebar-item"
+          to={buildQueryString("query", { city: "Liverpool" })}
+        >
+          Liverpool
+        </Link>
+
+        <Link
+          className="sidebar-item"
+          to={buildQueryString("query", { city: "Sheffield" })}
+        >
+          Sheffield
+        </Link>
+
+        <Link
+          className="sidebar-item"
+          to={buildQueryString("sort", { price: 1 })}
+        >
+          Price Ascending
+        </Link>
+
+        <Link
+          className="sidebar-item"
+          to={buildQueryString("sort", { price: -1 })}
+        >
+          Price Descending
+        </Link>
+      </ul>
       <div className="search">
         <form className="search-form" onSubmit={handleSearch}>
           <input
@@ -50,56 +93,6 @@ const SideBar = () => {
           </button>
         </form>
       </div>
-      <ul className="sidebar-links">
-        <li>
-          <Link
-            className="sidebar-link-items"
-            to={buildQueryString("query", { city: "Manchester" })}
-          >
-            Manchester
-          </Link>
-        </li>
-        <li>
-          <Link
-            className="sidebar-link-items"
-            to={buildQueryString("query", { city: "Leeds" })}
-          >
-            Leeds
-          </Link>
-        </li>
-        <li>
-          <Link
-            className="sidebar-link-items"
-            to={buildQueryString("query", { city: "Liverpool" })}
-          >
-            Liverpool
-          </Link>
-        </li>
-        <li>
-          <Link
-            className="sidebar-link-items"
-            to={buildQueryString("query", { city: "Sheffield" })}
-          >
-            Sheffield
-          </Link>
-        </li>
-        <li>
-          <Link
-            className="sidebar-link-items"
-            to={buildQueryString("sort", { price: 1 })}
-          >
-            Price Ascending
-          </Link>
-        </li>
-        <li>
-          <Link
-            className="sidebar-link-items"
-            to={buildQueryString("sort", { price: -1 })}
-          >
-            Price Descending
-          </Link>
-        </li>
-      </ul>
     </div>
   );
 };
