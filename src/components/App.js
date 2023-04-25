@@ -32,7 +32,10 @@ const App = () => {
         <Routes>
           <Route path="/" element={<Properties userID={userID} />} />
           <Route path="/add-property" element={<AddProperty />} />
-          <Route path="/saved-properties" element={<SavedProperties />} />
+          <Route
+            path="/saved-properties"
+            element={<SavedProperties userID={userID} />}
+          />
         </Routes>
       </div>
     </Router>
