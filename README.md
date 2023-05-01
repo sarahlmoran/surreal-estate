@@ -2,7 +2,7 @@
 
 ## Description
 
-This is a project completed with Command Shift bootcamp. I have created a property search engine with multiple pages:
+This is a project completed with Command Shift bootcamp (formerly Manchester Codes). I have created a property search engine with multiple pages:
 
 - A listings pages where you can search for different properties and sort or filter results.
 
