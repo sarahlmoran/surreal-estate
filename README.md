@@ -80,7 +80,7 @@ npm start
 
 ## If I Had More Time
 
-If I had more time I would...
+If I had more time I would add more styling.
 
 ## Author
 
